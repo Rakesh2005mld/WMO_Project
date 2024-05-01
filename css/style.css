@@ -1,0 +1,156 @@
+
+.gradient-background {
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 100px;
+}
+/* #navbar{
+  /* float:right; */
+  /* width:1255px; 
+}  */
+
+.lauda.dropdown-menu.show 
+{display: block;
+  width:280px;
+ }
+
+.calendar2{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  width:280px;
+  float:left;
+  grid-template-rows: repeat(9,1fr) ;
+  height:350px;
+  background-color:black;
+  gap: 1px;
+  border: 1px solid ;
+  border-radius: 5%;
+  
+  
+  }
+  .calendar_photo{
+    grid-column: span 7;
+    grid-row: span 2;
+    background-color: white;
+    
+  }
+
+  .month{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    grid-column: span 7;
+    /* background-color:blueviolet; */
+    border-radius: 10%;;
+    color: white;
+  }
+  .days1,.days2,.days3,.days4,.days5,.days6,.days7{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    border-radius: 20%;
+    font-weight: bold;
+  
+  }
+  .week_1,.week_1a,.week_1b,.week_1c,.week_1d,.week_1e,.week_1f{
+    /* background-color: #00bfff; */
+    display: flex;
+    justify-content: center;
+    border-radius: 25%;
+    color: white;
+  }
+
+  .week_2,.week_2a,.week_2c,.week_2b,.week_2d,.week_2e,.week_2f,.week_3,.week_3a,.week_3b,.week_3c,.week_3d,.week_3e,.week_3f{
+    /* background-color: #00bfff; */
+    display: flex;
+    justify-content: center;
+    border-radius: 25%;
+    color: white;
+  }
+  .week_4,.week_4a,.week_4b,.week_4c,.week_4d,.week_4e,.week_4f,.week_5,.week_5a,.week_5b,.week_5c,.week_5d,.week_5e,.week_5f{
+    /* background-color: #00bfff; */
+    display: flex;
+    justify-content: center;
+    border-radius: 25%;
+    color: white;
+  }
+
+  #sidebar {
+    
+    position: fixed;
+    max-width: 90px;
+    width: 100%;
+    background: var(--light);
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    transition: all .3s ease;
+    z-index: 200;
+    
+  }
+  #content {
+    position: relative;
+    width: calc(100% - 90px);
+    left: 74px;
+    transition: all .3s ease;
+  }
+  main {
+    width: 100%;
+    padding: 24px 20px 20px 20px;
+    background-color:#6495ed;
+  }
+  #cards{
+    margin-top: 36px;
+    /* i added */
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-basis: 300px;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    /* till here */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 20px;
+  }
+ 
+  #album{
+    display: flex;
+    grid-gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  #media_album {
+    flex-grow: 1;
+    flex-basis: 330px;
+  }
+
+  .flex-column {
+    flex-direction: column !important;
+    flex-grow: 1;
+  }
+ 
